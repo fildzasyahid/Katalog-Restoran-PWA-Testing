@@ -1,0 +1,100 @@
+.testimonials {
+  margin-top: 150px;
+  padding: 50px 0;
+  margin-bottom: -150px;
+}
+
+.testimonials h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.testimonials .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonials .col {
+  flex-basis: 30%;
+  margin: 0 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.testimonials .testi {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  margin: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.testi:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.testi:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 20px 20px 0;
+  border-style: solid;
+  border-color: #ffffff #ffffff #d3d3d3 #d3d3d3;
+  background-color: transparent;
+  width: 0;
+  height: 0;
+}
+
+.testi:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  border-width: 20px 0 0 20px;
+  border-style: solid;
+  border-color: #ffffff #d3d3d3 transparent transparent;
+  background-color: transparent;
+  width: 0;
+  height: 0;
+}
+
+.testimonials .testi:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid transparent;
+  border-top-color: #fff;
+}
+
+.testimonials .name {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.testimonials .stars {
+  color: #f0dd49;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.testimonials .stars .fa-star {
+  margin-right: 5px;
+}
+
+.testimonials p {
+  font-size: 16px;
+  line-height: 1.5;
+}
